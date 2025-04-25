@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	class Todo {
 		text: string = '';
@@ -56,7 +57,7 @@
 	}
 
 	function goToArchive() {
-		goto('/archive');
+		goto(`${base}/archive`);
 	}
 </script>
 

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	class Todo {
 		text: string = '';
@@ -22,7 +23,7 @@
 	}
 
 	function goBack() {
-		goto('/');
+		goto(`${base}/`);
 	}
 </script>
 
